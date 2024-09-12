@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes y Precios - Parque de Diversiones</title>
+    <link rel="stylesheet" href="precios.css">
+    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="paquete" id="oro" onclick="toggleInfo('gold-info')">Pasaporte ORO</div>
+            <div class="paquete" id="nitro" onclick="toggleInfo('nitro-info')">Pasaporte NITRO</div>
+            <div class="paquete" id="basico" onclick="toggleInfo('basico-info')">Pasaporte BÁSICO</div>
+        </div>
+        <div class="main-content">
+            <div class="mensaje-de-bienvenida" id="mensaje-de-bienvenida">
+                <h1>Bienvenido a nuestra sección de compras</h1>
+                <p>Presiona uno de los paquetes para ver la información y precios.</p>
+            </div>
+            <div class="info" id="gold-info">
+                <h2>Pasaporte GOLD</h2>
+                <img src="/IMAGENES/precionitro.jpeg" alt="Pasaporte GOLD" class="info-img"/>
+                <button class="buy-btn" onclick="AgregarATuCarro('GOLD', 100000)">Agregar al carrito</button>
+            </div>
+            <div class="info" id="nitro-info">
+                <h2>Pasaporte NITRO</h2>
+                <p>Información detallada sobre el Pasaporte NITRO...</p>
+                <button class="buy-btn" onclick="AgregarATuCarro('NITRO', 70000)">Agregar al carrito</button>
+            </div>
+            <div class="info" id="basico-info">
+                <h2>Pasaporte Básico</h2>
+                <p>Información detallada sobre el Pasaporte BÁSICO...</p>
+                <button class="buy-btn" onclick="AgregarATuCarro('BASICO', 50000)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="carrito">
+            <div class="header-carrito">Tu carrito</div>
+            <div class="elemento-carrito" id="elementos-carrito"></div>
+            <div class="total">
+                <span>Total: $<span id="total">0</span></span>
+            </div>
+            <button class="buy-btn" onclick="checkout()">¡Pagar!</button>
+        </div>
+    </div>
+    <script src="precios.js"></script>
+</body>
+</html>

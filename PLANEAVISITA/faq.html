@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes - Joyland</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #2980b9; /* Azul */
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    h1, h2 {
+        color: #dd5050; /* Salmón */
+    }
+    .logo {
+        margin: 20px 0;
+    }
+    .logo img {
+        width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+        cursor: pointer;
+    }
+    .faq-section {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    .faq-section h2 {
+        color: #8e44ad; /* Morado */
+    }
+    .faq-item {
+        margin: 10px 0;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .faq-item:last-child {
+        border-bottom: none;
+    }
+    .faq-question {
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #dd5050; /* Salmón */
+        color: #fff;
+        border-radius: 4px;
+        text-align: left;
+    }
+    .faq-answer {
+        display: none;
+        padding: 10px;
+        background-color: #f4f4f4;
+        color: #000;
+        border-radius: 4px;
+    }
+    .faq-question:hover {
+        background-color: #c43d3d; /* Salmón oscuro */
+    }
+    footer {
+        margin-top: 20px;
+    }
+    footer a {
+        color: #dd5050; /* Salmón */
+        text-decoration: none;
+        font-size: 16px;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Logo Joyland" title="Volver al inicio"></a>
+    </div>
+
+    <h1>Preguntas Frecuentes (FAQ)</h1>
+
+    <div class="faq-section">
+        <div class="faq-item">
+            <div class="faq-question">¿Dónde puedo estacionar mi vehículo?</div>
+            <div class="faq-answer">Contamos con un amplio estacionamiento al lado del parque. El estacionamiento es gratuito para todos los visitantes.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Dónde están ubicados los baños?</div>
+            <div class="faq-answer">Los baños están ubicados cerca de la entrada principal y en varias áreas del parque. Están claramente señalizados para tu comodidad.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo retirar mis entradas si las compré por internet?</div>
+            <div class="faq-answer">Si compraste tus entradas por internet, puedes retirarlas en el área de "Recogida de Entradas" en la entrada principal del parque. Solo necesitarás presentar tu comprobante de compra.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿A partir de qué edad los niños pueden acceder al parque?</div>
+            <div class="faq-answer">Los niños de todas las edades son bienvenidos. Sin embargo, los menores de 3 años entran gratis. Se recomienda supervisión adecuada para los niños pequeños en todas las áreas del parque.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Puedo ingresar alimentos al parque?</div>
+            <div class="faq-answer">No está permitido llevar alimentos del exterior al parque. Sin embargo, ofrecemos una variedad de opciones de comida dentro del parque para todos los gustos y necesidades dietéticas.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Volver al Inicio</a></p>
+    </footer>
+
+    <script>
+        // Script para mostrar y ocultar respuestas a las preguntas frecuentes
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

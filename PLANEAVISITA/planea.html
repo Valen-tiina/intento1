@@ -5,114 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Planea tu visita Joyland</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-      body {
-          font-family: Arial, sans-serif;
-          background-color: #2980b9; /* Azul */
-          color: #fff;
-          text-align: center;
-          padding: 20px;
-      }
-      h1, h2 {
-          color: #7a3e9d; /* Salmón */
-      }
-      .menu {
-          margin: 20px 0;
-      }
-      .menu button {
-          background-color: #dd5050; /* Morado */
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          cursor: pointer;
-          font-size: 16px;
-      }
-      .menu button:hover {
-          background-color: #7a3e9d; /* Morado más oscuro */
-      }
-      .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #8e44ad; /* Morado */
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-      }
-      .dropdown-content a {
-          color: white;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-      }
-      .dropdown-content a:hover {
-          background-color: #7a3e9d; /* Morado más oscuro */
-      }
-      .dropdown:hover .dropdown-content {
-          display: block;
-      }
-      .planifica {
-          margin: 20px 0;
-      }
-      .planifica a {
-          color: #fff;
-          text-decoration: none;
-          display: inline-block;
-          margin: 10px;
-          text-align: center;
-      }
-      .planifica a:hover {
-          color: #dd5050; /* Salmón */
-      }
-      .planifica i {
-          font-size: 40px;
-          display: block;
-          margin-bottom: 5px;
-      }
-      .planifica p {
-          font-size: 16px;
-      }
-      .COMPRA {
-          margin: 20px 0;
-      }
-      .COMPRA button {
-          background-color: #dd5050; /* Rojo Salmón */
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          cursor: pointer;
-          font-size: 16px;
-      }
-      .COMPRA button:hover {
-          background-color: #c43d3d; /* Rojo más oscuro */
-      }
-
-      
-  </style>
-
+  <link rel="stylesheet" href="planea.css">
 </head>
+
 <body>
-    <h1>Bienvenido a Joyland</h1>
-        <div class="dropdown">
-            <button>Menú</button><!--menu-->
-            <div class="dropdown-content">
-                <a href="">Planea tu visita</a><!--poner las referencias de cada pagina-->
-                <a href="">Atracciones</a>
-                <a href="">Precios</a>
-                <a href="">Contacto</a>
-            </div>
+    <nav class="main-nav">
+        <div class="logo">
+            <li><a href="/PANTALLAINICIO/inicio.html"><img src="/Z IMAGENES INICIO/logo.png" alt="Logo"></a></li>
         </div>
-    </div>
-    
+        <ul class="lista">
+            <li><a href="/PLANEAVISITA/planea.html">Planea tu visita</a></li>
+            <li><a href="/atracciones.html">Atracciones</a></li>
+            <li><a href="/CONTACTO/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+<br><br><br><br><br><br>
     <div class="planifica">
-        <h2>Planea tu visita</h2>
-        <a href="horario.html"><!--enlace archivo de la pagina-->
-            <i class="fas fa-calendar-day"></i><!--enlace logo-->
+        <h2>Planea tu visita</h2><br>
+        <a href="horario.html">
+            <i class="fas fa-calendar-day"></i>
             <p>Horarios</p>
         </a>
         <a href="como-llegar.html">
             <i class="fas fa-map-marker-alt"></i>
             <p>Cómo llegar</p>
         </a>
-        
         <a href="mantenimiento.html">
             <i class="fas fa-tools"></i>
             <p>Mantenimiento</p>
@@ -139,21 +56,37 @@
         </a>
     </div>
     
-    
-    <div class="section" id="atracciones">
-        <h2>JOYLAND DIVERSION SIN MÁS</h2>
-        <img src="montaña rusa.jpeg" alt="Atracciones">
-        <p>¡Conócelo! Pasa un día lleno de diversión con tu familia.</p>
-    </div>
-    <label for ="infoSelect">
 
-    <div class="informacion" id="mantenimiento">
-        <h2>Mantenimiento</h2>
+    <div class="container">
+        <img src="/Z IMAGENES PLANEA VISITA/Planea.png" alt="Imagen Principal" class="main-image">
+        <div class="text-content">
+            <h1 class="title">Título de la Página</h1>
+            <div class="purchase-box">
+                <h2>Compra aquí tus pasaportes</h2>
+                <p>Elige tu opción y completa la compra.</p>
+                <a href="/INICIOSESION/inicioSesion.html" class="purchase-button">Comprar</a>
+            </div>
+        </div>
     </div>
     
-    <div class="COMPRA">
-        <button onclick="window.location.href=''">Compra aquí tu pasaporte</button>
-    </div>
 
+    <div class="cuadroFinal">
+        <div class="columna1">
+            <h2 class="tituloColumna1">Siguenos en nuestras redes sociales</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/joy_land.oficial?igsh=MWVmZndpczF1bTVraQ=="><img src="/Z IMAGENES INICIO/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/share/24sQ1faYbpre5tLS/?mibextid=qi2Omg"><img src="/Z IMAGENES INICIO/facebook.png" alt="Facebook"></li>
+                <li><a href="https://www.tiktok.com/@joyland_oficial?_t=8pmFrUatOwH&_r=1"><img src="/Z IMAGENES INICIO/tiktok.png" alt="tiktok"></a></li>
+            </ul>
+        </div>
+        <div class="columna2">
+            <h2 class="tituloColumna2">¿Dudas?</h2>
+            <ul>
+                <li><a href="https://www.youtube.com">Nuestra politica de tratamiento de datos</a></li>
+                <li><a href="https://www.youtube.com">Terminos y condiciones</a></li>
+                <li><a href="/CONTACTO/contacto.html">Envianos un correo</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

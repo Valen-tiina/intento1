@@ -1,160 +1,101 @@
- <!doctype html>
-  <html lang="es">
-  <head>
+<!doctype html>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarios Joyland</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2980b9; /* Azul */
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #dd5050; /* Salmón */
-        }
-        .menu {
-            margin: 20px 0;
-        }
-        .menu button {
-            background-color: #8e44ad; /* Morado */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .menu button:hover {
-            background-color: #7a3e9d; /* Morado más oscuro */
-        }
-        .logo {
-            margin: 20px 0;
-        }
-        .section {
-            margin-top: 20px;
-        }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 80%;
-            margin-top: 20px;
-            color: #8e44ad; /* Morado */
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 15px;
-            text-align: center;
-        }
-        th {
-            background-color: #dd5050; /* Salmón */
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        img {
-            width: 300px;
-            height: auto;
-            margin: 10px;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: #2980b9; /* Azul */
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="horario.css">
 </head>
+
 <body>
-     <h1>Bienvenido a Joyland</h1>
-    <div class="menu">
-        <div class="logo"><!--parte principal visualizacion del logo-->
-            <a href="index.html"><img src="logo.jpeg" alt="Logo Joyland" title="Volver al inicio"></a>
+    <nav class="main-nav">
+        <div class="logo">
+            <li><a href="/PANTALLAINICIO/inicio.html"><img src="/Z IMAGENES INICIO/logo.png" alt="Logo"></a></li>
         </div>
-        </div>
-        <div class="dropdown"><!--opciones menu principal-->
-            <button>Menú</button>
-            <div class="dropdown-content">
-                <a href="">Planea tu visita</a>
-                <a href="">Atracciones</a>
-                <a href="">Precios</a>
-                <a href="">Contacto</a>
+        <ul class="lista">
+            <li><a href="/PLANEAVISITA/planea.html">Planea tu visita</a></li>
+            <li><a href="/atracciones.html">Atracciones</a></li>
+            <li><a href="/CONTACTO/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br>
+
+    <div class="schedule-container">
+        <h2>Horarios del Parque</h2>
+        <div class="schedule">
+            <div class="day">
+                <span class="day-name">Lunes:</span>
+                <span class="time">8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Martes:</span>
+                <span class="time">8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Miércoles:</span>
+                <span class="time">8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Jueves:</span>
+                <span class="time">8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Viernes:</span>
+                <span class="time">8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Sábado:</span>
+                <span class="time">9:00 AM - 7:00 PM</span>
+            </div>
+            <div class="day">
+                <span class="day-name">Domingo:</span>
+                <span class="time">9:00 AM - 7:00 PM</span>
             </div>
         </div>
     </div>
-    <h1>Horarios de Joyland</h1><!--visualizacion de imagenes e invitacion-->
-    <div class="section" id="parque-tematico">
-        <h2>PARQUE TEMATICO</h2>
-        <img src="montaña.png" alt="Montaña Rusa en el Parque Temático">
-        <p>Disfruta de emocionantes atracciones y espectáculos.</p>
+
+
+
+    <br><br><br>
+    <div class="imgHorarios">
+        <div class="gallery-item">
+            <img src="/Z IMAGENES PLANEA VISITA/montaña.png" alt="Imagen 1"><br><br>
+            <p>Disfruta de emocionantes atracciones y espectáculos.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/Z IMAGENES PLANEA VISITA/acuatico.jpeg" alt="Imagen 2"><br><br>
+            <p>Refresca tu día con nuestras increíbles piscinas y toboganes</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/Z IMAGENES PLANEA VISITA/carrusel y ruedas (2).jpeg" alt="Imagen 3"><br><br>
+            <p>Diviértete con juegos y actividades diseñadas especialmente para los más pequeños.</p>
+        </div>
     </div>
-    <div class="section" id="parque-acuatico">
-        <h2>PARQUE ACUATICO</h2>
-        <img src="acuatico.jpeg" alt="Piscinas y Toboganes en el Parque Acuático">
-        <p>Refresca tu día con nuestras increíbles piscinas y toboganes.</p>
+
+
+    <div class="cuadroFinal">
+        <div class="columna1">
+            <h2 class="tituloColumna1">Siguenos en nuestras redes sociales</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/joy_land.oficial?igsh=MWVmZndpczF1bTVraQ=="><img
+                            src="/Z IMAGENES INICIO/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/share/24sQ1faYbpre5tLS/?mibextid=qi2Omg"><img
+                            src="/Z IMAGENES INICIO/facebook.png" alt="Facebook"></li>
+                <li><a href="https://www.tiktok.com/@joyland_oficial?_t=8pmFrUatOwH&_r=1"><img
+                            src="/Z IMAGENES INICIO/tiktok.png" alt="tiktok"></a></li>
+            </ul>
+        </div>
+        <div class="columna2">
+            <h2 class="tituloColumna2">¿Dudas?</h2>
+            <ul>
+                <li><a href="https://www.youtube.com">Nuestra politica de tratamiento de datos</a></li>
+                <li><a href="https://www.youtube.com">Terminos y condiciones</a></li>
+                <li><a href="/CONTACTO/contacto.html">Envianos un correo</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="section" id="atracciones-ninos">
-        <h2>ATRACCIONES INFANTILES</h2>
-        <img src="carrusel y ruedas (2).jpeg" alt="Carrusel y Ruedas para Niños">
-        <p>Diviértete con juegos y actividades diseñadas especialmente para los más pequeños.</p>
-    </div>
-    <table><!--creacion tabla horarios-->
-        <thead><!--cabeza tabla es decir titulos y division-->
-            <tr>
-                <th>Día</th>
-                <th>Horario</th>
-            </tr>
-        </thead>
-        <tbody><!--cuerpo tabla-->
-            <tr>
-                <td>Lunes</td>
-                <td>8:00 AM - 8:00 PM</td>
-            </tr>
-            <tr>
-                <td>Martes</td>
-                <td>8:00 AM - 8:00 PM</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>8:00 AM - 8:00 PM</td>
-            </tr>
-            <tr>
-                <td>Jueves</td>
-                <td>8:00 AM - 8:00 PM</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>8:00 AM - 8:00 PM</td>
-            </tr>
-            <tr>
-                <td>Sábado</td>
-                <td>9:00 AM - 7:00 PM</td>
-            </tr>
-            <tr>
-                <td>Domingo</td>
-                <td>9:00 AM - 7:00 PM</td>
-            </tr>
-        </tbody>
-    </table>
+
 </body>
+
 </html>

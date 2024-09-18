@@ -3,53 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paquetes y Precios - Parque de Diversiones</title>
-    <link rel="stylesheet" href="w1.css">
-    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <title>Paquetes de Diversiones</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="/FormularioPago/precios.css">
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="package" id="gold" onclick="toggleInfo('gold-info')">Pasaporte GOLD</div>
-            <div class="package" id="nitro" onclick="toggleInfo('nitro-info')">Pasaporte NITRO</div>
-            <div class="package" id="basico" onclick="toggleInfo('basico-info')">Pasaporte BÁSICO</div>
+        <div class="sidebar">  <!-- sidebar - barra lateral -->
+            <div class="package" onclick="toggleInfo('info-GOLD')">
+                Pasaporte GOLD
+            </div>
+            <div class="package" onclick="toggleInfo('info-Nitro')">
+                Pasaporte Nitro
+            </div>
+            <div class="package" onclick="toggleInfo('info-General')">
+                Pasaporte General
+            </div>
+            <div class="package" onclick="toggleInfo('info-VIP')">
+                Pase VIP
+            </div>
         </div>
         <div class="main-content">
-            <div class="mensaje-de-bienvenida" id="mensaje-de-bienvenida">
-                <h1>Bienvenido a nuestra sección de compras</h1>
-                <p>Presiona uno de los paquetes para ver la información y precios.</p>
+            <div id="mensaje-de-bienvenida" class="mensaje-de-bienvenida">
+                <h1>Bienvenido a nuestra página de paquetes de diversiones</h1>
+                <p>Selecciona un paquete de la izquierda para ver más detalles</p>
             </div>
-            <div class="info" id="gold-info">
+            <div id="info-GOLD" class="info">
                 <h2>Pasaporte GOLD</h2>
-                <p><img src="/IMAGENES/precionitro.jpeg" width="600" /></p>
-                <button class="buy-btn" onclick="AgregarATuCarro('GOLD', 100000)">Agregar al carrito</button>
+                <p><img src="/Z IMAGENES CARRITO/1.png" alt="gold" width="350"></p>
+                <button class="buy-btn" onclick="AgregarATuCarro('Pasaporte GOLD', 100000)">Añadir al Carrito</button>
             </div>
-            <div class="info" id="nitro-info">
-                <h2>Pasaporte NITRO </h2>
-                <p>Información detallada sobre el Pasaporte NITRO...</p>
-                <button class="buy-btn" onclick="AgregarATuCarro('NITRO', 70000)">Agregar al carrito</button>
+            <div id="info-Nitro" class="info">
+                <h2>Pasaporte Nitro</h2>
+                <p><img src="/Z IMAGENES CARRITO/2.png" alt="nitro"  width="350"></p>
+                <button class="buy-btn" onclick="AgregarATuCarro('Pasaporte Nitro', 70000)">Añadir al Carrito</button>
             </div>
-            <div class="info" id="basico-info">
-                <h2>Pasaporte Básico</h2>
-                <p>Información detallada sobre el Pasaporte BÁSICO...</p>
-                <button class="buy-btn" onclick="AgregarATuCarro('BASICO', 50000)">Agregar al carrito</button>
+            <div id="info-General" class="info">
+                <h2>Pasaporte General</h2>
+                <p><img src="/Z IMAGENES CARRITO/3.png" alt="general" width="350"></p>
+                <button class="buy-btn" onclick="AgregarATuCarro('Pasaporte General', 45000)">Añadir al Carrito</button>
+            </div>
+            <div id="info-VIP" class="info">
+                <h2>Pase VIP</h2>
+                <p><img src="/Z IMAGENES CARRITO/4.png" alt="vip"  width="350"></p>
+                <button class="buy-btn" onclick="AgregarATuCarro('Pase VIP', 100000)">Añadir al Carrito</button>
             </div>
         </div>
-        <!-- Carrito de compras-->
         <div class="carrito">
-            <!-- contenedor principal de carrito -->
             <div class="header-carrito">Tu carrito</div>
-            <!-- Contenedor donde se mostrará los productos en el carrito-->
             <div class="elemento-carrito" id="elementos-carrito"></div>
-            <!--contenido para mostrar el total del carrito-->
             <div class="total">
-                <!--para mostrar el total tiene un id para usar en js-->
                 <span>Total: $<span id="total">0</span></span>
             </div>
-            <!--botón para hacer el pago-->
-            <button class="buy-btn" onclick="checkout()">¡Pagar!</button>
+            <button class="buy-btn" onclick="irAPagar()">¡Pagar!</button>
         </div>
     </div>
-    <script src="w1.js"></script>
+    <script src="/FormularioPago/precios.js"></script>
 </body>
 </html>

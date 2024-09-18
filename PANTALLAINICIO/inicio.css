@@ -13,8 +13,8 @@ nav.main-nav {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 7%;
     height: 100px;
-    background: linear-gradient(to left, #541766, #2980b9);
-    box-shadow: 10px 10px 15px rgba(72, 26, 73, 0.3)
+    background: linear-gradient(to left, hwb(49 29% 4%), #dd5050);
+    box-shadow: 10px 10px 15px rgba(206, 223, 51, 0.3)
 }
 
 nav .logo {
@@ -57,7 +57,7 @@ nav .lista a {
 }
 
 nav .lista a:hover {
-    border-bottom: 3px solid #be45e2c0;
+    border-bottom: 3px solid #e27145c0;
 }
 
 nav.secondary-nav {
@@ -66,7 +66,7 @@ nav.secondary-nav {
     /* Colocar debajo de la primera */
     left: 0;
     right: 0;
-    background-color: #712788;
+    background-color: #f7a867;
     height: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     ;
@@ -133,15 +133,14 @@ nav .icon-bars .line {
 }
 
 
-
-nav.secondary-nav .sesion {
+nav.secondary-nav .sesion a {
     display: flex;
     text-transform: capitalize;
     padding: 10px 20px;
     font-size: 17px;
     font-weight: bold;
-    color: white;
-    text-decoration: none;
+    color: white; 
+    text-decoration: none; /* Elimina el subrayado del enlace */
     text-align: center;
     border: none;
     border-radius: 5px;
@@ -149,14 +148,23 @@ nav.secondary-nav .sesion {
     cursor: pointer;
     transition: border-bottom 0.3s ease;
     float: inline-end;
-    text-decoration: none;
-    left: 50%;
-    
+    position: relative; 
 }
 
-nav.secondary-nav .sesion:hover {
-    border-bottom: 4px solid #9c27c0;
-    text-decoration: none;
+nav.secondary-nav .sesion a:hover {
+    border-bottom: 4px solid #dd5050;
+    text-decoration: none; 
+    color: white; 
+}
+
+/* Estilo para el enlace ya visitado */
+nav.secondary-nav .sesion a:visited {
+    color: white; 
+}
+
+/* Estilo para el enlace activo (cuando se hace clic) */
+nav.secondary-nav .sesion a:active {
+    color: white; 
 }
 
 .img-fluid {
@@ -213,7 +221,7 @@ nav.secondary-nav .sesion:hover {
 
 .novedades {
     position: absolute;
-    color: #4d229c;
+    color: #dd5050;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-size: 25px;
@@ -305,7 +313,7 @@ border-radius: 10px;
 .texto h2{
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #8e20aa;
+    color: #dd5050;
     text-align: center;
     font-weight: bolder;
     font-style: italic;
@@ -317,70 +325,50 @@ border-radius: 10px;
     color: black;
 }
 
-nav.third-nav {
+
+.cuadroFinal {
     bottom: 0px;  /* Colocar abajo */
     left: 0px;
     right: 0px;
-    background-color: #712788;
+    background-color: #dd5050;
     height: 150px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 0 10%;
+    padding: 0 10%; /* Espaciado interno para todo el contenedor */
     z-index: 9;
     display: flex;
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    justify-content: center; /* Centra las columnas horizontalmente */
 }
 
-nav.third-list {
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: #712788;
-    height: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 0 10%;
-    display: flex;
-}
-
-/* Estilo para la lista dentro del banner */
-nav.third-list ul {
-    display: flex;
-    /* Alinea los elementos de la lista en fila */
-    padding: 0;
-    /* Elimina el relleno por defecto */
-    margin: 0;
-    /* Elimina el margen por defecto */
-    list-style: none;
-    text-align: center;
-}
-
-/* Estilo para cada elemento de la lista */
-nav.third-list li {
-    margin: 0 15px;
-    /* Espacio entre los elementos de la lista */
-    font-size: 15px;
-    /* Tamaño de la fuente */
-    font-weight: bolder;
-    /* Grosor de la fuente */
-    color: white;
-    /* Color del texto */
-    font-family: Arial, Helvetica, sans-serif;
-    /* Tipografía */
-    text-align: center;
-}
-
-/* Estilo para los enlaces dentro del banner */
-nav.third-list a {
-    display: block;
-    /* Hace que el enlace ocupe todo el área del elemento de lista */
-    padding: 10px;
-    /* Espaciado interno del enlace */
+.columna1, .columna2 {
+    /* Sin márgenes adicionales, Flexbox maneja la alineación */
     text-decoration: none;
-    /* Elimina el subrayado del enlace */
-    color: white;
-    /* Color del texto del enlace */
+    /* Opcional: Ajusta el ancho para las columnas si es necesario */
 }
 
-/* Estilo para el efecto hover en los enlaces */
-nav.third-list a:hover {
-    border-bottom: 2px solid #85379c;
-    /* Subrayado al pasar el cursor */
+.columna1 {
+    margin-right: 160px; /* Espacio entre columnas */
+}
+
+
+.tituloColumna1, .tituloColumna2 {
+    font-size: 20px;
+    color: white;
+    margin: 0; /* Elimina márgenes adicionales alrededor del título */
+    font-weight: bolder;
+}
+
+.cuadroFinal ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+    margin: 0; /* Elimina el espaciado externo de la lista */
+}
+
+.cuadroFinal li {
+    margin: 5px 0; /* Ajusta el espaciado entre elementos de lista */
+    color: white; /* Aplica color blanco a los textos de la lista */
+}
+.cuadroFinal a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
 }

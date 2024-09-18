@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #2980b9, #8e44ad, #dd5050);
+    background: linear-gradient(to left, hwb(49 29% 4%), #dd5050);
 }
 
 .login {
@@ -60,4 +60,3 @@ button:active {
     max-width: 100%;
     height: auto;
   }
-

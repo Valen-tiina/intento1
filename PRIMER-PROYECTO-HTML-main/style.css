@@ -1,0 +1,440 @@
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+}
+.name{
+    width:100%;
+    height:280px;
+    background: #de75a2;
+}
+.name .content .p-1{
+    color:#ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-size:45px;
+    margin-top: 0;
+    margin-bottom: 5;
+    text-align: center;
+}
+.name .content .p-2{
+    color:#ffffff;
+    font-family: "Lato", sans-serif;
+    font: size 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.name .img{
+    position: absolute;
+    top:8%;
+    right:5%;
+    width:180px;
+    height:180px;
+    border-radius:15%;
+    overflow: hidden;
+}
+
+.name .img img{
+    height: 180px;
+    width: 180px;
+}
+
+.info{
+    width: 70%;
+    height: auto;
+    background: #ff9dc7;
+    margin: 5% auto;
+    padding: 20px;
+}
+
+.info .tituloinfo{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid;
+}
+
+.info .nombre{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .RNombre{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px;
+}
+
+.info .direccion{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .rdireccion{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .telefono{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .rtelefono{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .correo{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .rcorreo{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .nacimiento{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .rnacimiento{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .id{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;  
+}
+
+.info .rid{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .linkedin{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;
+}
+
+.info .link{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .tituloLaboral{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid;
+}
+.info .primero{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline;  
+}
+
+.info .rprimero{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .educacion{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid;
+}
+
+.info .colegio{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rcolegio{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px;  
+}
+
+.info .sena{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rsena{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px;  
+}
+
+.info .ingles{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .ringles{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px;  
+}
+
+.info .idiomas{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid;
+}
+
+.info .primerIdioma{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rprimerIdioma{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px;  
+}
+
+.info .segundoIdioma{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rsegundoIdioma{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .titulohabilidades{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid; 
+}
+
+.info .habilidades{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rhabilidades{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
+.info .js{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+
+.info .rjs{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}    
+
+.info .Habilidadesblandas{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom:2px #ffffff solid;  
+}
+
+.info .blanda1{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda1{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda2{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda2{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda3{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda3{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda4{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda4{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda5{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda5{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda6{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda6{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+.info .blanda7{
+    color: #ffffff;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    display:inline; 
+}
+.info .rblanda7{
+    color:#5e0f4a;
+    font-family:"Lato", sans-serif;
+    font-size:17;
+    display:inline;
+    margin-left: 20px; 
+}
+
